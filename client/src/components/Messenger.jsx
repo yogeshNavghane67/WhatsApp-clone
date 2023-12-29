@@ -1,7 +1,12 @@
-import { AppBar, Toolbar, styled } from "@mui/material";
+import { AppBar, Box, Toolbar, styled } from "@mui/material";
 
 // Component
 import LoginDialog from "../account/LoginDialog";
+
+const Component = styled(Box)`
+height: 100vh;
+background: #DCDCDC;
+`
 
 const Header =styled(AppBar)`
 height: 220px;
@@ -11,14 +16,14 @@ box-shadow: none;
 
 const Messenger = () => {
   return (
-    <>
+    <Component>
       <Header>
         <Toolbar>
 
         </Toolbar>
       </Header>
       <LoginDialog />
-    </>
+    </Component>
   );
 };
 
