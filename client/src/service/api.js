@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const url ='';
+const url ='http://localhost:8000';
 
 export const addUser = async (data) => {
     try {
@@ -9,3 +9,14 @@ export const addUser = async (data) => {
         console.log('Error while adduser API', error.message);
     }
 } 
+
+export const getUsers = async () => {
+    try {
+        let response = await axios.get(`${url}/users`);
+        //console.log(response);
+        return response.data;
+    } catch (error) {
+        console.log('Error while calling getUser api', error.message);
+        
+    }
+}
