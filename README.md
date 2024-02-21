@@ -1,4 +1,4 @@
-# WhatsApp
+# WhatsApp Clone
 
 ## Demo
 
